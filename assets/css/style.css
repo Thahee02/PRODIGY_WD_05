@@ -1,6 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    background: url(../img/bg.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    user-select: none;
+    font-family: 'Lemon', serif;
+}
+
+:root{
+    --primary-color: #030637;
+}
+
+.container{
+    padding: 20px 10px 0;
+    background-color: rgba(255, 255, 255, .75);
+    text-align: center;
+    border-radius: 15px;
+    /* box-shadow: 1px 1px 20px #fff; */
+}
+
+.container h1{
+    font-family: 'Lemon', serif;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.search input{
+    outline: none;
+    background-color: gainsboro;
+    border: none;
+    padding: 4px 2px 4px 8px;
+    border-radius: 3px;
+    width: 85%;
+}
+
+.search button{
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 4px 5px;
+    cursor: pointer;
+}
+
+.weather-menu, .error-menu{
+    display: none;
+}
+
+hr{
+    margin: 10px auto;
+    width: 90%;
+}
+
+.place-date{
+    margin: 10px 0;
+}
+
+.weather-img img{
+    height: 100px;
+    width: 100px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px;
+}
+
+.weather-img .weather-temprature{
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.title{
+    font-size: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 3px;
+    margin: 20px 0;
+}
+
+.title a{
+    color: white;
+    text-decoration: none;
 }
 
