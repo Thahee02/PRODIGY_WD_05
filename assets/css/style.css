@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 *{
     margin: 0;
@@ -14,7 +15,7 @@ body{
     align-items: center;
     min-height: 100vh;
     user-select: none;
-    font-family: 'Lemon', serif;
+    /* font-family: 'Lemon', serif; */
 }
 
 :root{
@@ -22,23 +23,24 @@ body{
 }
 
 .container{
-    padding: 20px 10px 0;
+    padding: 10px 20px;
     background-color: rgba(255, 255, 255, .75);
     text-align: center;
-    border-radius: 15px;
-    /* box-shadow: 1px 1px 20px #fff; */
+    border-radius: 5px;
+    transition: .5s ease-in-out;
+    min-width: 300px;
 }
 
 .container h1{
     font-family: 'Lemon', serif;
     color: var(--primary-color);
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .search input{
     outline: none;
-    background-color: gainsboro;
-    border: none;
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
     padding: 4px 2px 4px 8px;
     border-radius: 3px;
     width: 85%;
@@ -49,17 +51,34 @@ body{
     color: white;
     border: none;
     border-radius: 3px;
-    padding: 4px 5px;
+    padding: 7px 8px;
     cursor: pointer;
+}
+
+.place-date #city{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.place-date #date{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 .weather-menu, .error-menu{
     display: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.weather-menu, .error-menu{
+    transition: .5s ease-in-out;
 }
 
 hr{
     margin: 10px auto;
-    width: 90%;
+    width: 100%;
 }
 
 .place-date{
@@ -70,12 +89,17 @@ hr{
     height: 100px;
     width: 100px;
     border-radius: 3px;
-    box-shadow: 2px 2px 2px;
+    /* box-shadow: 2px 2px 2px; */
 }
 
 .weather-img .weather-temprature{
     font-size: 48px;
-    margin: 10px 0;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.weather-img .weather-condition{
+    font-weight: bold;
 }
 
 .title{
@@ -83,7 +107,8 @@ hr{
     background-color: var(--primary-color);
     color: white;
     border-radius: 3px;
-    margin: 20px 0;
+    margin: 5px 0 10px;
+    font-family: 'Lemon', serif;
 }
 
 .title a{
